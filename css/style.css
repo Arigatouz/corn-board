@@ -1,0 +1,78 @@
+body {
+  background-color: #222;
+  display: relative;
+}
+
+.controls {
+  margin: 10rem 2rem;
+  background: #ffffff;
+  padding: 2rem;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+}
+
+.cornhole {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 2;
+}
+.cornhole__firstlayer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 250px;
+  height: 500px;
+  background-color: #fbc02d;
+  border-radius: 20px;
+  z-index: 1;
+}
+.cornhole__secondlayer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  width: 50px;
+  height: 500px;
+  background-color: #0d47a1;
+  z-index: 1;
+}
+.cornhole__board {
+  width: 300px;
+  height: 600px;
+  background-color: #0d47a1;
+  border: 10px solid transparent;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.cornhole__hole {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: #222;
+  border-radius: 50%;
+  z-index: 2;
+}
+.cornhole__hole:nth-of-type(1) {
+  top: 25%;
+}
+.cornhole__hole:nth-of-type(2) {
+  top: 75%;
+}/*# sourceMappingURL=style.css.map */

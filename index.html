@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./app.js" defer></script>
+  <script></script>
+  <title>Table</title>
+</head>
+
+<body class="">
+  <div class="controls">
+    <div>
+      <label for="">Cornhole Color</label>
+      <input class="ml-2" type="color" id="corn-color-picker">
+    </div>
+    <div>
+      <label for="" class="block">Add outline
+        <input type="checkbox" id="add-outline">
+      </label>
+      <label class="corn-outline-container hidden" for="">Cornhole outline Color
+        <input class="ml-2" type="color" id="corn-outline-picker">
+        <input type="range" class="block" id="outline-range" min="3" max="15" />
+      </label>
+    </div>
+    <div>
+      <label for="" class="block">Add border
+        <input type="checkbox" id="add-border">
+      </label>
+      <label class="corn-border-container hidden" for="">Cornhole border Color
+        <input class="ml-2" type="color" id="corn-border-picker">
+        <input type="range" class="block" id="border-range" min="3" max="15" />
+
+      </label>
+    </div>
+    <div>
+      <label for="add-hole" class="block">
+        Add hole border Color
+        <input type="checkbox" id="add-hole">
+      </label>
+      <label for="corn-hole-border-picker" class="corn-hole-border-container hidden">Cornhole Hole Border Color
+        <input class="ml-2" type="color" id="corn-hole-border-picker">
+        <input type="range" class="block" id="hole-range" min="3" max="15" />
+      </label>
+      <label for="add-first-layer" class="block mt-2">Add first Layer
+        <input type="checkbox" id="add-first-layer">
+      </label>
+      <label for="add-second-layer" class="block   mt-2">Add second Layer
+        <input type="checkbox" id="add-second-layer">
+      </label>
+    </div>
+  </div>
+  <div class="cornhole">
+    <div class="cornhole__board">
+      <div class="cornhole__firstlayer hidden"></div>
+      <div class="cornhole__secondlayer hidden"></div>
+      <div class="cornhole__hole">
+      </div>
+      <img src="" alt="">
+    </div>
+  </div>
+</body>
+
+</html>
